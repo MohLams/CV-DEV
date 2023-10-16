@@ -5,6 +5,7 @@
 }
 
 .cv-container{
+    border: solid;
     display: flex;
     width: 1160px;
     flex-direction: row;
@@ -51,6 +52,7 @@ header{
 
 
 footer{
+    padding-top: 20px;
     text-align: center;
     flex-basis: 100%;
     background-color: #782221;
@@ -60,6 +62,7 @@ footer{
 h1, h2, h3{
     font-family: "Lato-Black";
 }
+
 .profil{
     width: 150px;
     height: 150px;
@@ -70,12 +73,28 @@ h1, h2, h3{
 }
 
 .background-yellow{
-    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    border-left: solid #dbc2a4;
+    position: absolute;
     padding-left: 20px;
     background-color: #dbc2a4;
     opacity: 1;
-    border-left-color: #782221;
 }
+
+#left-box{
+    width: 420px;
+}
+
+#right-box{
+    width: 675px;
+}
+
+#right-box:hover{
+    border-left-color: #782221;
+    border-left-width: 10px;
+}
+
 
 p{
     font-family: "Raleway";
